@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Custumer Profile</title>
 </head>
@@ -40,55 +41,74 @@
     <div class="main">
         <div class="main_container">
             <div class="part-1">
-                <img class="main-img" src="./img/profile.png" alt="">
-                <p>Work <span></span></p>
-                <h4>Spotify New York <button>Primary</button></h4>
-                <p>170 Wiliam Street <br> New York, NY 10038-78 212-312-50</p>
-                <h4>Metropolitian <span>Secondary</span></h4>
-                <h4>Museum</h4>
-                <p>New York, NY 10038-78 212-312-50</p>
-                <div>Skills <span></span></div>
+                <img class="main-img" src="./img/profile.svg" alt="">
+                <p>Work
+                    <hr>
+                </p>
+                <h2>Spotify New York
+                    <button>Primary</button>
+                </h2>
+                <p id="p2">170 Wiliam Street <br> New York, NY 10038-78 212-312-50</p>
+                <h2>Metropolitian
+                    <button>Secondary</button>
+                </h2>
+                <h2>Museum</h2>
+                <p id="p3">170 Wiliam Street <br>New York, NY 10038-78 212-312-50</p>
+                <div>Skills
+                    <hr>
+                </div>
                 <h4>Branding</h4>
                 <h4>Ui/UX</h4>
                 <h4>Web - Design</h4>
                 <h4>Packaging & Editorial</h4>
             </div>
-            <div class="pari-2">
-                <h1>Jeremy Rose <span>New York,NY</span></h1>
-                <h6>Web Designer</h6>
+            <div class="part-2">
+                <h1>Jeremy Rose <span><i class='bx bxs-map'></i> New York,NY</span></h1>
+                <h6>Product Designer</h6>
                 <p>Rankings</p>
-                <div>
+                <div id="star">
                     <h1>8.6</h1>
-                    <img src="" alt="">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
                 </div>
                 <div class="message">
-                    <h4>Send message</h4>
+                    <h4><i class='bx bxs-message' style="vertical-align: middle;"></i> Send message</h4>
                     <div class="btn">Contacts</div>
                     <p>Report user</p>
                 </div>
                 <div class="timeline">
-                    <div class="">timeline</div>
-                    <div>About</div>
+                    <div class="time"><i class='bx bx-low-vision' style="vertical-align:middle;"></i> Timeline</div>
+                    <div class="user"><i class='bx bxs-user'></i> About</div>
                 </div>
-                <p>Contact information</p>
-                <p>Phone: <span>+1 234 567 890</span></p>
-                <p>
-                    Addreas: <span>New York, NY 10038-78 212-312-50</span>
-                    <span>525 E 68th Street </span>
+                <hr>
+                <p class="upper">Contact information</p>
+                <p class="mb color">Phone: <span id="margin10" class="bluee margin">+1 234 567 890</span></p>
+                <p class="mb color">
+                    Addreas: <span class="margin color">New York, NY 10038-78 212-312-50</span><br>
+                    <span class="color" style="margin-left: 110px;">525 E 68th Street </span>
                 </p>
-                <p>E-mail: <span>tohirjon@gmail.com</span></p>
-                <p>Site: <span>www.melecule.com</span></p>
-                <div>Basic information</div>
-                <p>Birthday: <span>June 3, 1992</span></p>
-                <p>Gender: <span>Make</span></p>
+                <p class="mb color">
+                    E-mail: <span class="bluee margin" style="margin-left: 60px;">tohirjon@gmail.com</span>
+                </p>
+                <p class="mb color" style="margin-bottom: 30px;">
+                    Site: <span class="bluee margin" style="margin-left: 80px;">www.melecule.com</span>
+                </p>
+                <p class="mb" class="upper">Basic information</p>
+                <p class="mb color">Birthday: <span class="margin color">June 3, 1992</span></p>
+                <p class="mb color">Gender: <span id="margin10" class="margin color">Make</span></p>
             </div>
-            <div class="part-3">
-                <div>Bookmar</div>
+            <div id="part-3">
+                <div>
+                    <i class='bx bxs-bookmark-star' style="vertical-align: middle;"></i> Bookmark
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js "></script>
 </body>
 
 </html>

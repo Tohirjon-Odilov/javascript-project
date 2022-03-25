@@ -15,6 +15,11 @@ header ul {
     align-items: center;
 }
 
+.part-1 {
+    width: 300px;
+    margin-right: 80px;
+}
+
 li,
 li a {
     text-decoration: none;
@@ -64,4 +69,147 @@ li:nth-child(6) {
 
 .main_container {
     display: flex;
+    padding: 80px;
+}
+
+.main-img {
+    width: 300px;
+    margin: 0 60px 30px 0;
+}
+
+p:nth-child(2) {
+    color: #999;
+}
+
+p {
+    color: #777;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+p#p2 {
+    margin: 10px 0 20px 0;
+}
+
+button {
+    margin-left: 20px;
+    padding: 7px 10px;
+    outline: none;
+    border: none;
+    color: blue;
+    background: rgba(55, 130, 243, 0.623);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+p#p3 {
+    margin: 10px 0 20px 0;
+}
+
+.part-2 h1 span {
+    vertical-align: middle;
+    font-size: 13px;
+    color: #999;
+}
+
+.part-2 h1 span i {
+    vertical-align: middle;
+    font-size: 15px;
+    color: #666;
+}
+
+h6 {
+    font-size: 18px;
+    color: blue;
+    margin-bottom: 30px;
+}
+
+#star {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#star h1 {
+    margin-right: 10px;
+}
+
+#star i {
+    color: blue;
+    font-size: 20px;
+}
+
+#star i:last-child {
+    color: rgb(158, 158, 158);
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.message .btn {
+    margin: 0 30px 0 30px;
+}
+
+.timeline {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.timeline .time {
+    color: #999;
+    margin-right: 20px;
+}
+
+.upper {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #999;
+}
+
+.upper {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #999;
+}
+
+.bluee {
+    color: blue;
+}
+
+.margin {
+    margin-left: 50px;
+    color: #999;
+}
+
+#margin10 {
+    margin-left: 60px;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.color {
+    color: #000;
+}
+
+.bluee {
+    color: blue;
+}
+
+
+/* part 3 */
+
+#part-3 {
+    width: 400px;
+}
+
+#part-3 div {
+    color: #999;
+    float: right;
 }
