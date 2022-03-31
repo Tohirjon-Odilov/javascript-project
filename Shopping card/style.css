@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    background-color: #ECF4FF;
+    width: 100%;
+    height: 100vh;
+}
+
+.apple_container {
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    padding: 50px 80px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: -12px 12px 24px #ababab, 12px -12px 24px #ECF4FF;
+}
+
+.apple_container-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 a {
+    color: red;
+}
+
+
+/* apple */
+
+.apple_container-main {
+    padding: 40px 0;
+}
+
+.apple {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+img {
+    width: auto;
+    height: 100px;
+}
+
+.part-1 {
+    margin-left: 40px;
+}
+
+.part-3 {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.part-3 span {
+    margin: 0px 15px;
+    width: 35px;
+    height: 35px;
+    padding-top: 4px;
+    background: #D8D8D8;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.part-3 p {
+    padding-top: 4px;
+}
+
+
+/* grapes */
+
+.grapes {
+    position: relative;
+    /* left: -30px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.grapes .part-1 {
+    position: relative;
+    left: 5px;
+}
+
+.grapes .part-2 {
+    position: relative;
+    left: 10px;
+}
+
+.part-4 h2,
+.part-4 p a {
+    float: right;
+}
+
+.part-4 p {
+    margin-top: 40px;
+}
+
+.part-4 p:nth-child(3) a {
+    color: red;
+}
+
+.part-4 p:nth-child(2) a {
+    color: blue;
+}
+
+.part-2 p {
+    margin-bottom: 10px;
+}
+
+.span-1 {
+    position: absolute;
+    border: solid 1px black;
+    width: 25px;
+    height: 25px;
+}
+
+.span-2 {
+    background-color: green;
+    border-radius: 50%;
+    padding: 1px 10px;
+    position: relative;
+    left: 1px;
+    top: 3px;
+}
+
+
+/* .line {
+    width: 100vh;
+    height: 20px;
+    background: #000;
+} */
+
+
+/* Footer */
+
+hr {
+    position: relative;
+    right: 500px;
+    width: 300%;
+    margin-bottom: 10px;
+}
+
+.apple_contanier-footer {
+    width: 250px;
+    float: right;
+    position: relative;
+    top: -20px;
+}
+
+.footer_part-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_part-2 {
+    margin-top: 10px;
+}
+
+.footer_part-2 button {
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #A7C9F6;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.footer_part-2 button:focus {
+    box-shadow: -6px 6px 12px #7087a5, 6px -6px 12px #deffff;
+    transition: all 1s;
+}

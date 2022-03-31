@@ -8,12 +8,26 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Custumer Profile</title>
+    <script>
+        function $wheel() {
+            if (scrollY !== 0) {
+                document.querySelector('#ul').style.boxShadow = "0px 6px 16px 1px rgba(0, 0, 0, 0.49)"
+                document.querySelector('#ul').style.transition = "all 0.3s"
+                document.querySelector('#ul').style.background = "white"
+
+            } else if (scrollY == 0) {
+                document.querySelector('#ul').style.boxShadow = "none";
+                document.querySelector('#ul').style.transition = "all 0.5s";
+                document.querySelector('#ul').style.background = "none";
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body onscroll="$wheel()">
 
     <header>
-        <ul>
+        <ul id="ul">
             <li>
                 <img class="header_logo" src="./img/spotify.png" alt="">
             </li>
@@ -33,7 +47,7 @@
                 <a class="text_a" href="#">My Contacts</a>
             </li>
             <li>
-                <img class="profile" src="./img/profile.png" alt="">
+                <img id="avatar" class="profile" src="./img/profile.png" alt="">
             </li>
         </ul>
     </header>
@@ -41,7 +55,7 @@
     <div class="main">
         <div class="main_container">
             <div class="part-1">
-                <img class="main-img" src="./img/profile.svg" alt="">
+                <img id="avatar1" class="main-img" src="./img/profile.svg" alt="">
                 <p>Work
                     <hr>
                 </p>
@@ -57,22 +71,51 @@
                 <div>Skills
                     <hr>
                 </div>
-                <h4>Branding</h4>
-                <h4>Ui/UX</h4>
-                <h4>Web - Design</h4>
-                <h4>Packaging & Editorial</h4>
+                <div class="skills"></div>
+                <!-- Branding <br> Ui/UX <br> Web - Design <br> Packaging & Editorial -->
+                <div id="edit" class="btn11">
+                    Edit
+                </div>
+            </div>
+            <div class="modal">
+                <h3>Edit form</h3>
+                <div class="close">
+                    <i class='bx bx-window-close'></i>
+                </div>
+                <form action="#salom">
+                    <p><input type="file"></p>
+                    <p><input id="name1" type="text" value="Jeki Chan" placeholder="Name"></p>
+                    <p><input type="text" placeholder="Address" value="New York Holis 33"></p>
+                    <p><input type="text" placeholder="Job" value="Full stack Developer"></p>
+                    <p><input type="number" placeholder="Stars count" value="4"></p>
+                    <p><input type="text" placeholder="Email" value="rumar234@gmail.com"></p>
+                    <p><input type="text" placeholder="Phone" value="+993888432"></p>
+                    <p><input type="text" placeholder="Date of birthday" value="02/01/2003"></p>
+                    <p>
+                        <select name="skills" multiple id="skills">
+                            <option value="adobexd">AdobeXD</option>
+                            <option value="photoshop">Adobe Photoshop</option>
+                            <option value="illustrator">Adobe Illustrator</option>
+                            <option value="3dsmax">3ds MAX</option>
+                            <option value="figma">Figma</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="submit" class="btn">
+                    </p>
+                </form>
             </div>
             <div class="part-2">
-                <h1>Jeremy Rose <span><i class='bx bxs-map'></i> New York,NY</span></h1>
-                <h6>Product Designer</h6>
+                <h1 id="name">Jeremy Rose <span id="address"><i  class='bx bxs-map'></i> New York,NY</span></h1>
+                <h6 id="job">Product Designer</h6>
                 <p>Rankings</p>
                 <div id="star">
-                    <h1>8.6</h1>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
+                    <h1 id="stars">8.6</h1>
+                    <i id="starss" class='bx bxs-star'></i>
+                    <i id="starss" class='bx bxs-star'></i>
+                    <i id="starss" class='bx bxs-star'></i>
+                    <i id="starss" class='bx bxs-star'></i>
+                    <i id="starss" class='bx bxs-star'></i>
                 </div>
                 <div class="message">
                     <h4><i class='bx bxs-message' style="vertical-align: middle;"></i> Send message</h4>
@@ -86,8 +129,8 @@
                 <hr>
                 <p class="upper">Contact information</p>
                 <p class="mb color">Phone: <span id="margin10" class="bluee margin">+1 234 567 890</span></p>
-                <p class="mb color">
-                    Addreas: <span class="margin color">New York, NY 10038-78 212-312-50</span><br>
+                <p id="address" class="mb color">
+                    Addreas: <span id="address" class="margin color">New York, NY 10038-78 212-312-50</span><br>
                     <span class="color" style="margin-left: 110px;">525 E 68th Street </span>
                 </p>
                 <p class="mb color">
@@ -98,7 +141,7 @@
                 </p>
                 <p class="mb" class="upper">Basic information</p>
                 <p class="mb color">Birthday: <span class="margin color">June 3, 1992</span></p>
-                <p class="mb color">Gender: <span id="margin10" class="margin color">Make</span></p>
+                <p class="mb color">Gender: <span id="margin10" class="margin color">Male</span></p>
             </div>
             <div id="part-3">
                 <div>
@@ -108,6 +151,7 @@
         </div>
     </div>
 
+    <script src="jQuery.js"></script>
     <script src="script.js "></script>
 </body>
 

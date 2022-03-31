@@ -10,13 +10,21 @@ header {
 }
 
 header ul {
+    position: fixed;
     display: flex;
-    padding: 30px 70px;
+    padding: 0px 70px;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* margin-bottom: 20px; */
+    height: 80px;
+    /* background: white;
+    box-shadow: 0px 6px 16px 1px rgba(0, 0, 0, 0.49); */
 }
 
 .part-1 {
     width: 300px;
+    margin-top: 30px;
     margin-right: 80px;
 }
 
@@ -106,6 +114,10 @@ button {
 
 p#p3 {
     margin: 10px 0 20px 0;
+}
+
+.part-2 {
+    margin-top: 20px;
 }
 
 .part-2 h1 span {
@@ -207,9 +219,84 @@ h6 {
 
 #part-3 {
     width: 400px;
+    margin-top: 20px;
 }
 
 #part-3 div {
     color: #999;
     float: right;
+}
+
+.btn11 {
+    background-color: cornflowerblue;
+    padding: 8px 30px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.btn11:hover {
+    /* background-color: rgba(156, 187, 245, 0.897); */
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+.modal {
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 1px 24px 0px rgba(34, 60, 80, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+    width: 400px;
+    position: fixed;
+    top: 20px;
+    z-index: 1;
+    margin-left: 30%;
+    display: block;
+    margin-right: 30%;
+}
+
+form input {
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(224, 210, 210);
+    border-radius: 15px;
+}
+
+form p select {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(224, 210, 210);
+    border-radius: 15px;
+}
+
+.close {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -25px;
+}
+
+.close i {
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.tag {
+    margin: 5px 10px;
+    padding: 2px;
+    background-color: #F7C31D;
+    border-radius: 5px;
 }

@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+    background: #222;
+    /* background-image: url(./img/cloud.jpg); */
+    background-image: url("https://source.unsplash.com/1600x900/?washington/snowy");
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* body:before {
+    content: "Weather of World";
+} */
+
+#h2 {
+    transition: all 0.5s ease-in-out;
+    background-color: #ec39b7;
+    background-image: linear-gradient(to top, #0015ff 0%, rgba(247, 230, 78, 0.067) 50%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 20px;
+    font-size: 4em;
+}
+
+.card {
+    background: #000000d0;
+    color: #fff;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    height: 60px;
+    transition: all 1s ease;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28); */
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search_bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+    display: none;
+}
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, rgb(255, 3, 242), #eb334b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* display: none; */
+}
